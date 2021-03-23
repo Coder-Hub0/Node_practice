@@ -1,5 +1,6 @@
 # NODE JS/Express
 
+
 > # Steps 
 >  1. Install Node.js and NPM in your system
 > 2. Create a folder in which your project files are stored.
@@ -48,16 +49,18 @@ For this project we need to install express dependency so we stored in our proje
 
 >>>>>>> ### Need to install  __HOGAN-middleware__ for render the files Using terminal  
 >>>>>>>> npm install hogan-middleware  --save <br>
+>>>>>>>> npm install hjs --save
+
 
 >>>>>> ### Register the extention of file 
 >>>>>>>app.set('view engine' ,'mustache') 
 
 >>>>>>  ### Register the dependency
->>>>>>> app.engine('mustache' ,require('hogan-middleware')._express) 
+>>>>>>> app.engine('mustache' ,require('hogan-middleware').__express) 
 
 >>>>> #### Start write a code for render the HTML page
 >>>>>>app.get('/url',(req,res,next)=>{
-    *res.render(home)*
+    *res.render(home,data=null)*
 })
 
 >> 4. Choosing a PORT in which site can run
